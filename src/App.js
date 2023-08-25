@@ -22,7 +22,7 @@ function App() {
       <section className="cards">
        {
         data.map((child) => (
-          <Card data={{ title: child.title, url: child.url, score: child.score, selftext: child.selftext_html}} />
+          <Card key={child.data.name} info={child.data} />
         ))
        }
       </section>
